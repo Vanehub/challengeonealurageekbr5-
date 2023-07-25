@@ -1,0 +1,78 @@
+.AdicionarProducto {
+
+
+    display: flex;
+    width: 559px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+.titulo-NuevoProducto{
+
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+}
+.text-adicionar {
+    
+    color: var(--preto-50, #A2A2A2);
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+
+    -webkit-box-shadow: 10px 9px 5px -9px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 9px 5px -9px rgba(0,0,0,0.39);
+    box-shadow: 10px 9px 5px -9px rgba(0,0,0,0.39);
+
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+
+}
+.caja-input {
+    color: var(--preto-50, #A2A2A2);
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+   
+   
+    -webkit-box-shadow: 10px 9px 5px -9px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 9px 5px -9px rgba(0,0,0,0.39);
+    box-shadow: 10px 9px 5px -9px rgba(0,0,0,0.39);
+
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+
+
+
+}
+#btnmenu {
+
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--azul-100, #2A7AE4);
+    background-color: transparent;
+
+    color: var(--azul-100, #2A7AE4);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

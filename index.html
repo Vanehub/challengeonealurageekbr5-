@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="whidt=device-whit, inicial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        <link href="css/productos.css" rel="stylesheet">
+        <link href="css/anexarproducto.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+        <title>Ecommerce-AluraGeek</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <aside>
+        <div class="container"  id="nav">
+            <nav class="container  navbar-brand">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="img/sports_esports_black_24dp 1.svg" alt="Logo1" class="logo1">
+                        <img src="img/Texto.svg" alt="Logo2" class="logo2">
+                    </div>
+                    <div class="col-sm-3"> 
+                        <form class="cajaPesquisa"> 
+                            <input class="caja-texto" id="buscador"   type="text" class="search-input" placeholder="Buscar" aria-label="Buscar">
+                        </form>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icono" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15.5001 14H14.7101L14.4301 13.73C15.6301 12.33 16.2501 10.42 15.9101 8.39002C15.4401 5.61002 13.1201 3.39002 10.3201 3.05002C6.09014 2.53002 2.53014 6.09001 3.05014 10.32C3.39014 13.12 5.61014 15.44 8.39014 15.91C10.4201 16.25 12.3301 15.63 13.7301 14.43L14.0001 14.71V15.5L18.2501 19.75C18.6601 20.16 19.3301 20.16 19.7401 19.75C20.1501 19.34 20.1501 18.67 19.7401 18.26L15.5001 14ZM9.50014 14C7.01014 14 5.00014 11.99 5.00014 9.50002C5.00014 7.01002 7.01014 5.00002 9.50014 5.00002C11.9901 5.00002 14.0001 7.01002 14.0001 9.50002C14.0001 11.99 11.9901 14 9.50014 14Z" fill="#A2A2A2"/>
+                        </svg>
+                    </div> 
+                    <div class="col-sm-6">         
+                    </div>      
+                </div>
+            </nav>
+        </div>
+        </aside>
+        <header class="contenedorPrincipal">
+            <div class="container" id="login-container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form  action="home.html"   id="form" method="post">
+                        <label id="textLabel"  for="user-email">Email: </label>
+                        <input class="box"   type="email" id="user-email" name="userEmail" />
+                         <label id="textLabel" for="user-password">Password: </label>
+                         <input class="box"   type="password" id="user-password" name="userPassword" /><br><br>
+                        <input type="submit" class="btn-login btn-primary" value="Iniciar Sesion" onclick="return validateEmail()" />
+                        </form>
+                    </div>
+                </div>    
+            </div> 
+        </header>
+        <main class="contenedorSecundario">
+            <div class="container" id="registro">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                              <img src="img/sports_esports_black_24dp 1.svg" alt="...">
+                              <img src="img/Texto.svg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4   list">
+                        <ul class="list">
+                            <li class="lista-items"><a href="#">Quienes Somos</a></li><br>
+                            <li class="lista-items"><a href="#">Politica de Privacidad</a></li><br>
+                            <li class="lista-items"><a href="#">Programa de Fidelidad</a></li><br>
+                            <li class="lista-items"><a href="#">Nuestras Tiendas</a></li><br>
+                            <li class="lista-items"><a href="#">Quiero ser Franquiciado</a></li><br>
+                            <li class="lista-items"><a href="#">An&uacutencie Aqu&iacute;</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <label>Platique con nosotros</label><br>
+                        <input class="caja-mensajeria"  id="nombreMens"    type="text" placeholder="Nombre y Apellido"><br><br>
+                        <textarea  class="text-mensajeria" id="mensajelog"    name="comentarios"  placeholder="Escribe aquí tus comentarios"></textarea><br><br>
+                        <button class="btn btn-primary" type="submit" id="btn-mensaje"  onclick="comentario()">Enviar mensaje</button>
+                    </div>    
+                </div>       
+            </div> 
+        </main>
+        <footer>
+            
+        </footer>
+        <rodape class="pie-container">
+            <div class="container" id="rodapie">
+                <div class="row" id="pie-pagina">
+                    <div class="col-sm-12">
+                        <p class="copi"> &copy; copyrigth by Evelyn Arevalo</p>
+                    </div>
+                 </div>
+            </div>
+        </rodape>
+    </body>
+    <script src="js/datosVarios.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/anexarproductos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+</html>
